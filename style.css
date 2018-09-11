@@ -1,3 +1,4 @@
+/*/////// Global Settings ///////*/
 /* * {
     border: 1px solid red;
 } */
@@ -14,35 +15,45 @@ html, body {
     padding-right: 0;
 }
 
+row {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+/*/////// Navigation ///////*/
 .navigation {
+    padding-top: 10px;
     position: fixed;
     top: 0;
     z-index: 5;
     width: 100%;
     background-color: white;
     margin: auto;
+    border-bottom: 1px solid #ccc;
 }
-
-/* .navbar {
-    padding-bottom: 10px;
-} */
 
 .navbar-brand {
     font-size: 24px;
     font-weight: bold;
+    color: black;
 }
 
-/* li {
-    border: 1px solid blue;
-    padding: 8px, 0px;
-} */
+.navbar-brand:hover {
+    color: black;
+}
 
-a:hover.nav-link  {
-    border-bottom: 6px solid orangered;
+a.nav-link {
+    color: black;
+}
+
+.nav-item:hover  {
+    background-color: white;
+    border-bottom: 6px solid blue;
     overflow: hidden;
-    /* text-decoration: underline;
-    text-decoration-color: orangered;
-    text-decoration-style: solid; */
+}
+
+span.icon-bar {
+    background-color: black;
 }
 
 .social-icons {
@@ -50,13 +61,16 @@ a:hover.nav-link  {
     margin-bottom: 14px;
 }
 
-.social-icons a {
-    text-decoration-line: none;
-    padding: 4px;
+.fab {
+    /* color: #212529; */
+    color: linear-gradient(45deg, red, blue);
 }
 
-.fab {
-    color: #212529;
+/*/////// Main Image ///////*/
+.image {
+    margin-top: 4%;
+    width: 100%;
+    height: auto;
 }
 
 h1 {
@@ -91,6 +105,7 @@ h1 {
     display:block;
 }
 
+/*/////// 3 ///////*/
 .left-side {
     /* background-color:#ccc; */
     /* background-color: #212529; */
@@ -98,7 +113,6 @@ h1 {
     /* color: white; */
     border: 1px solid #ccc;
 }
-
 
 table {
     width: 100%;
@@ -120,6 +134,26 @@ h3 {
     font-size: 16px;
 }
 
+/*/////// Portfolio ///////*/
+/* .portfolio-container {
+background-color: pink;
+margin-top: 2px;
+padding-bottom: 80px;
+} */
+
+.portfolio-grid {
+    border: 1px solid purple;
+    height: auto;
+}
+
+.portfolio-cube {
+    border: 1px solid purple;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+/*/////// Footer ///////*/
 .top-footer {
     margin-top: 60px;
 }
